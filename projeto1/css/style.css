@@ -1,0 +1,7 @@
+.todo_list{
+    margin-bottom: 10px;
+}
+
+.checkbox_list input:checked + span {
+    text-decoration: line-through;
+}

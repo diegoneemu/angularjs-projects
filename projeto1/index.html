@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="TodoApp">
+<head>
+    <meta charset="UTF-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de To do</title>
+</head>
+<body ng-controller="TodoController">
+    <div ng-repeat="item in todo track by $index" class="todo_list">
+        <label class="checkbox_list">
+            <input type="checkbox" value="todo_list" name="todo_list"
+            ng-model="listTodo"/>
+            <span>{{item}}</span>
+        </label>
+    </div>
+    <div class="todo_input">
+        <label for="todo">Tarefa a fazer: </label>
+            <input type="text" name="todo" id="todo" placeholder="Digite a tarefa a fazer" ng-model="taskTodo">
+            <button ng-click="addTodoTask()">Adicionar tarefa</button>
+    </div>
+
+</body>
+</html>

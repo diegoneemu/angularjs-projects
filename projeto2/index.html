@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="FavMoviesApp">
+<head>
+    <meta charset="UTF-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes favoritos</title>
+</head>
+<body ng-controller="MoviesController">
+    <div class="movies-card">
+        <h1>Meus filmes favoritos</h1>
+        <img ng-class="{'zoom': activeZoom}" class="movies-img" src="imgs/{{number}}.jpg">
+        <div class="movies-btn">
+            <button ng-click="previousMovie()">Anterior</button>
+            <button ng-click="nextMovie()">Próximo</button>
+            <button ng-click="zoom()">Zoom</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="BancoApp">
+<head>
+    <meta charset="UTF-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App do banco</title>
+</head>
+<body ng-controller="BancoController">
+    <div>
+        <span ng-if="false">Saldo no banco: R${{valorCarteiraAtual}}</span>
+        <br>
+        Digite o valor: <input type="number" ng-model="valorInput"/><br>
+        <br><button ng-click="fazerPix()" ng-model="btnPix">Fazer pix</button><br>
+        <br><button ng-click="fazerDeposito()" ng-model="btnDeposito">Depositar na conta</button>
+        <div class="mensagem">
+            <br><span ng-model="msg">Mensagem: {{msg}}</span><br>
+            <br><span ng-model="horario"><br>{{horario}}</span>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+.movies-card {
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.movies-card .movies-btn {
+    margin: 2px 562px 2px 562px;
+}
+
+.movies-card .movies-img {
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    margin: 50px;
+}
+
+.zoom {
+    transform: scale(1.2);
+}
